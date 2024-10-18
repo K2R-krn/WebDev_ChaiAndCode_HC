@@ -1,4 +1,6 @@
 
+//^ Learning = Constructor Finctions , new, this, throw, error
+
 //* Below are many Constructor Functions
 
 function Person(name, age){
@@ -61,6 +63,7 @@ console.log(dog.sound()); // Can access sound which was later added
 
 
 // ==================================================================================================================
+//* Specifically Giving out ERROR specific error if new is not called 
 
 function Drink(name){
     if(!new.target){
