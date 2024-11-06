@@ -1,3 +1,28 @@
+//! Q Write a function named `processTeaOrder` that takes another function , `makeTea` as a parameter and calls it with argument "earl grey"
+//! Return result of calling 'makeTea'  =  
+
+function makeTea(typeOfTea){
+  return `makeTea : ${typeOfTea}`;
+}
+function processTeaOrder(peopeo){
+  return peopeo('Mitthi Chai');
+}
+let order = processTeaOrder(makeTea);
+// console.log(order);
+
+
+//! Q Write a function named `createTeaMaker` that returns another finction.  The returned function should take one parameter ,  `teaType` and return 
+//! a message like `"Making green tea"`.    Store the returned function in a variable named `teaMaker` and call it with "greenTea"
+
+function createTeaMaker(){
+  return function (teaType){
+    return `Making ${teaType}`;
+  };
+}
+let teaMaker = createTeaMaker();
+// console.log(teaMaker('GreenTea'));
+
+
 
 
 //^ Arrays and Methods
@@ -6,9 +31,16 @@
 //* Task 1: Array Filtering
 //* Write a function filterNumbers(arr) that returns only numbers from a mixed array
 function filterNumber(arr){
-  return arr.filter(item => typeof item == 'number');
-}
+  // return arr.filter(item => typeof item === 'number');
+  return arr.filter( (item) => typeof item === 'number');
 
+}
+const filtNo = (arr) => arr.filter(item => typeof item === 'number');
+let arr = [1,2,3,4,4,'a','s',6,'f',7,8,'f','ss',true];
+let result = filtNo(arr);
+let result1 = filterNumber(arr);
+// console.log(result);
+// console.log(result1);
 // ==================================================================================================================
 // ==================================================================================================================
 
@@ -85,6 +117,7 @@ function countVowels(str) {
   return count;
 }
 
+
 // =========================================================================================================
 // Higher-Order Functions and Arrow Functions
 // All the following tasks must be strictly be writtern in arrow functions only.
@@ -126,10 +159,10 @@ const person = {
 
 // Task 2: Function within a function
 // Write a function outer() that contains another function inner() and returns a value of 'Inner function called' on calling outer()
-
-function outer(out) {
+function outer(outtt) {
   function inner(){
-      return `Inner function called`
+      return `Inner ${outtt} function called`
   }
   return inner();
 }
+// console.log(outer('Karan'));
