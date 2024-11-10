@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        } 
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .hidden{
+            display:none;
+        }
+    </style>
+    <!--  We can add `defer` before src which means document loaded after document is parsed i.e. LOADED LATE -->
+    <!-- <script defer src="./script.js" defer></script>   -->
+</head>
+<body>
+    <h1 class="firsth1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+    <h1 class="highlight">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+    <!--^  E X A M P L E   1   Change myParagraph paragraph to different text on click-->
+    <section id="example-1">
+        <h2>Accesing DOM elements</h2>
+        <p id="myParagraph"> This is para. Click the button to change . // </p>
+        <button id="changeTextButton">Change Text</button>
+    </section>
+
+    <!--^  E X A M P L E   2   Highlighting the first City in the list-->
+    <section id="example-2">
+        <h2>Traversing the DOM</h2>
+        <ul id="citiesList">
+            <li class="firstOne">DL, IND</li>
+            <li>ML, AUS</li>
+            <li>NYC, USA</li>
+            <li>MUM, IND</li>
+        </ul>
+        <button id="highlightFirstCity">Highlight First City.</button>
+    </section>
+
+
+    <!--^  E X A M P L E   3   Changing Order to Espresso with CSS change-->
+    <section id=""example-3">
+        <h2>Manupulating DOM Elements</h2>
+        <div>Order : <span id="coffeeType">Lattee</span> </div>
+        <button id="changeOrder">Change Order to Espresso</button>
+    </section>
+
+    <!-- ^  E X A M P L E  4   _  Creating and Inserting Element-->
+     <section id="example-4">
+        <h2>Creating and Inserting Elements</h2>
+        <button id="addNewItem">Add a New Item to the Shopping List</button>
+        <ul id="shoppingList">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+    </section>
+
+    <!-- ^   E X A M P L E  5   _ Removing a DOM element -->
+    <section id="example-5">
+        <h2>Removing DOM Elemetns</h2>
+        <ul id="taskList">
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>
+            <li>Task 5</li>
+        </ul>
+        <button id="removeTaskButton"> Remove Last Task. </button>
+    </section>
+
+
+  <!--^ Video 2  ============================================================================ -->
+
+
+  <!--^ E X A M P L E   6   _ Event Handling in the DOM -->
+    <section id="example-6">
+        <h2>Event Delegation</h2>
+        <ul id="teaList">
+            <li id="teaItem">Green Tea</li>
+            <li id="teaItem">Chai Garam</li>
+            <li id="teaItem">Karak Chai</li>
+            <li id="teaItem">Oolang tea</li>
+            <li id="teaItem">Black Tea</li>
+        </ul>
+        <p>Click On any tea to select it !!</p>
+    </section>
+
+
+    <!--^ E X A M P L E   7   _ Form Handling -->
+    <section id="example-7">
+        <h2>Form handling</h2>
+        <form id="feedbackForm">
+            <label for="feedbackInput">Your Feedback : </label>
+            <input type="text" id="feedbackInput" placeholder="Enter Feedback" />
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="feedbackDisplay"></p>
+
+    </section>
+
+    <!--^ E X A M P L E      _ Form Handling -->
+    <section id="example-8">
+        <h2>DOM Content loaded</h2>
+        <p id="domStatus"> Waiting for DOM to load....</p>
+    </section>
+
+
+    <!--^  E X A M P L E  9    _ Css classes Manipulation -->
+    <section id="example-9">
+        <h2>CSS Classes Manupulation</h2>
+        <p id="descriptionText">This text will change color !</p>
+        <button id="toggleHighlight"> Toggle Highlight</button>
+    </section>
+<script src="./script.js"></script>
+</body>
+</html>

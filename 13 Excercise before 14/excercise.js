@@ -9,8 +9,7 @@ function processTeaOrder(peopeo){
 }
 let order = processTeaOrder(makeTea);
 // console.log(order);
-
-
+// ---
 //! Q Write a function named `createTeaMaker` that returns another finction.  The returned function should take one parameter ,  `teaType` and return 
 //! a message like `"Making green tea"`.    Store the returned function in a variable named `teaMaker` and call it with "greenTea"
 
